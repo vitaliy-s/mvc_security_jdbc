@@ -14,6 +14,8 @@
 </head>
 <body>
 Admin page!
+<br>
+<h2>hello ${pageContext.request.userPrincipal.name}</h2>
 <form action="<c:url value="/logout"/>" method="post">
     <input type="submit" value="Logoff"/> (also clears any remember-me cookie)
     <security:csrfInput/>

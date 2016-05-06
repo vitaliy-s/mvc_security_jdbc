@@ -14,6 +14,8 @@
 </head>
 <body>
 User page!
+<br>
+<h2>hello ${pageContext.request.userPrincipal.name}</h2>
 <a href="<c:url value="/admin"/> "> admin</a>
 
 <form action="<c:url value="/logout"/>" method="post">
